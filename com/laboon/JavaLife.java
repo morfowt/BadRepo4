@@ -2,7 +2,7 @@ package com.laboon;
 
 public class JavaLife {
 
-    /**
+	/**
      * This is the main part.
      *
      * @param size Size of world
@@ -12,15 +12,14 @@ public class JavaLife {
      */
 	
     public JavaLife(int size, int seed, int percent, int maxIterations) {
-	World w = new World(size, seed, percent);
-	System.out.println("Initial Configuration:");
-	System.out.println(w.toString());
-	for (int j=0; j < maxIterations; j++) {
-	    w = w.iterate();
-	    System.out.println("Iteration " + (j + 1) + ":");
-	    System.out.println(w.toString());
-	}
-		
+		World w = new World(size, seed, percent);
+		System.out.println("Initial Configuration:");
+		System.out.println(  w.toString()  );
+		for (int j=0; j < maxIterations; j++) {
+			w   = w.iterate();
+			System.out.println("Iteration " + (j + 1) + ":");
+			System.out.println(w.toString());
+		}	
     }
 	
     /**
